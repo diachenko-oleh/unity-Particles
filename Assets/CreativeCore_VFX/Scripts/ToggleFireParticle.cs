@@ -24,14 +24,14 @@ public class ToggleFireParticle : MonoBehaviour
     {
         if (Input.GetKeyDown(toggleKey))
         {
-            if(isPlaying)
+            if (isPlaying)
             {
                 fireParticle.Stop();
                 pointLight.SetActive(false);
                 if (extinguishParticle != null)
                     extinguishParticle.Play();
                 isPlaying = false;
-            } 
+            }
             else
             {
                 fireParticle.Play();
